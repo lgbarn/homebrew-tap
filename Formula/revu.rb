@@ -1,28 +1,28 @@
 class Revu < Formula
   desc "Fast, memory-safe terminal diff/review tool (a Rust port of hunk)"
   homepage "https://github.com/lgbarn/revu"
-  version "0.3.0"
+  version "0.3.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/lgbarn/revu/releases/download/v#{version}/revu-aarch64-apple-darwin.tar.gz"
-      sha256 "091d69e7a22de8823371167d72eb73d41a3142bd18fb99b10ea3b18327a015a1"
+      sha256 "8c442ed3245dfc82f9a2e5b232e2ad81ffcc0849f6bc1f824385bb4483c1df71"
     end
     on_intel do
       url "https://github.com/lgbarn/revu/releases/download/v#{version}/revu-x86_64-apple-darwin.tar.gz"
-      sha256 "d94a28cd389d5f0353533299d20419e7110528df247e181531962ff1dcb54124"
+      sha256 "63e5e6c88630c6cb149ce80fc5ccb2d692c3511760896384e28e01e1352f6270"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/lgbarn/revu/releases/download/v#{version}/revu-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e47be2b3a107d1dd7da2924dad3700db95a4f0ec10f7a0b7000025e22d9bd1ff"
+      sha256 "78b300fcc95abbf74597042c11979fc3b40364f320bb86174a3d4f8b2a88dde1"
     end
     on_intel do
       url "https://github.com/lgbarn/revu/releases/download/v#{version}/revu-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "8501ac1f901db43252c53924746046da573658d2ebcf71b627ac48bb31024c43"
+      sha256 "b1882d6372d9042b48fbe3f91d319763cad4fe7ac2f9791d9e3a2acaf67ee49b"
     end
   end
 
